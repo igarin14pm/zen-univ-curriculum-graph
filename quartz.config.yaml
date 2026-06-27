@@ -1,12 +1,12 @@
 # yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
 configuration:
-  pageTitle: Quartz 5
+  pageTitle: ZEN大学 カリキュラム・グラフ
   pageTitleSuffix: ""
   enableSPA: true
-  enablePopovers: true
+  enablePopovers: false
   analytics:
     provider: plausible
-  locale: en-US
+  locale: ja-JP
   baseUrl: igarin14pm.github.io/zen-univ-curriculum-graph
   ignorePatterns:
     - private
@@ -42,7 +42,7 @@ configuration:
         textHighlight: "#b3aa0288"
 plugins:
   - source: github:quartz-community/created-modified-date
-    enabled: true
+    enabled: false
     options:
       defaultDateType: modified
       priority:
@@ -157,11 +157,42 @@ plugins:
     layout:
       position: left
       priority: 50
+    options:
+      folderClickBehavior: toggle
   - source: github:quartz-community/graph
     enabled: true
     layout:
       position: right
       priority: 10
+    options:
+      localGraph:
+        drag: true
+        zoom: true
+        depth: 2
+        scale: 2
+        repelForce: 0.8
+        centerForce: 0.8
+        linkDistance: 30
+        fontSize: 0.8
+        opacityScale: 10
+        removeTags: []
+        showTags: false
+        focusOnHover: false
+        enableRadial: false
+      globalGraph:
+        drag: true
+        zoom: true
+        depth: -1
+        scale: 2
+        repelForce: 0.8
+        centerForce: 0.8
+        linkDistance: 30
+        fontSize: 0.6
+        opacityScale: 10
+        removeTags: []
+        showTags: false
+        focusOnHover: true
+        enableRadial: true
   - source: github:quartz-community/search
     enabled: true
     layout:
@@ -181,7 +212,7 @@ plugins:
       position: beforeBody
       priority: 10
   - source: github:quartz-community/content-meta
-    enabled: true
+    enabled: false
     layout:
       position: beforeBody
       priority: 20
@@ -264,7 +295,7 @@ plugins:
       subdir: plugin
     enabled: true
     options:
-      theme: default
+      theme: aaaa
   - source: github:quartz-community/obsidian-plugin-excalidraw
     enabled: true
     options:
