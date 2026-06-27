@@ -3,7 +3,7 @@ configuration:
   pageTitle: ZEN大学 カリキュラム・グラフ
   pageTitleSuffix: ""
   enableSPA: true
-  enablePopovers: true
+  enablePopovers: false
   analytics:
     provider: plausible
   locale: ja-JP
@@ -42,7 +42,7 @@ configuration:
         textHighlight: "#b3aa0288"
 plugins:
   - source: github:quartz-community/created-modified-date
-    enabled: true
+    enabled: false
     options:
       defaultDateType: modified
       priority:
@@ -157,6 +157,8 @@ plugins:
     layout:
       position: left
       priority: 50
+    options:
+      folderClickBehavior: toggle
   - source: github:quartz-community/graph
     enabled: true
     layout:
@@ -210,7 +212,7 @@ plugins:
       position: beforeBody
       priority: 10
   - source: github:quartz-community/content-meta
-    enabled: true
+    enabled: false
     layout:
       position: beforeBody
       priority: 20
