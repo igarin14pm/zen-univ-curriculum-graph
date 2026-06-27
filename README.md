@@ -1,17 +1,39 @@
-# Quartz v5
+# zen-univ-curriculum-graph
 
-> “[One] who works with the door open gets all kinds of interruptions, but [they] also occasionally gets clues as to what the world is and what might be important.” — Richard Hamming
+ZEN大学のシラバスとカリキュラム・マップに記載されている前提科目・後継科目を Markdown ファイルに記載し、Quartz でグラフを描画します。
 
-Quartz is a set of tools that helps you publish your [digital garden](https://jzhao.xyz/posts/networked-thought) and notes as a website for free.
+## 動作環境
 
-🔗 Read the documentation and get started: https://quartz.jzhao.xyz/
+- Node.js 22
 
-[Join the Discord Community](https://discord.gg/cRFFHYye7t)
+## セットアップ手順
 
-## Sponsors
+```bash
+# リポジトリのクローン
+git clone https://github.com/igarin14pm/zen-univ-curriculum-graph.git
+cd zen-univ-curriculum-graph.git
 
-<p align="center">
-  <a href="https://github.com/sponsors/jackyzha0">
-    <img src="https://cdn.jsdelivr.net/gh/jackyzha0/jackyzha0/sponsorkit/sponsors.svg" />
-  </a>
-</p>
+# パッケージのインストール
+npm i
+
+# Quartz プラグインをインストール
+npx quartz plugin install --from-config
+```
+
+## 起動方法
+
+```
+npx quartz build --serve
+```
+
+起動後、`http://localhost:8080` にアクセス
+
+## ライセンス
+
+本リポジトリは [MIT License](./LICENSE.txt) のもとで公開されています。
+
+本リポジトリは以下のライブラリを使用しています。
+
+- [**Quartz**](https://github.com/jackyzha0/quartz)
+
+各ライブラリの権利はそれぞれの開発者に帰属します。
