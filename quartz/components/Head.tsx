@@ -106,6 +106,8 @@ export default (() => {
             return resource
           }
         })}
+
+        <meta name="robots" content="noindex, nofollow" />
       </head>
     )
   }
