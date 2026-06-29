@@ -293,9 +293,7 @@ plugins:
       name: quartz-themes
       repo: github:saberzero1/quartz-themes
       subdir: plugin
-    enabled: true
-    options:
-      theme: aaaa
+    enabled: false
   - source: github:quartz-community/obsidian-plugin-excalidraw
     enabled: true
     options:
