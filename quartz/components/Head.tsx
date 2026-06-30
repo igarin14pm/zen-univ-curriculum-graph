@@ -67,9 +67,9 @@ export default (() => {
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={title} />
-        <meta name="twitter:description" content={description} />
-        <meta property="og:description" content={description} />
-        <meta property="og:image:alt" content={description} />
+        <meta name="twitter:description" content="ZEN大学における科目の前提・後継科目と、そのグラフを閲覧できるWebサイトです。" />
+        <meta property="og:description" content="ZEN大学における科目の前提・後継科目と、そのグラフを閲覧できるWebサイトです。" />
+        <meta property="og:image:alt" content="右に &quot;ZEN大 カリキュラム・グラフ&quot; という文字、左にそのロゴがある画像" />
 
         {!usesCustomOgImage && (
           <>
