@@ -1,5 +1,5 @@
 ---
-title: Home - ZEN大学 カリキュラム・グラフ
+title: Home - ZEN大 カリキュラム・グラフ
 ---
 
 > [!info] このWebサイトはベータ版です
