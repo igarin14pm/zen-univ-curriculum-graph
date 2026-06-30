@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
 configuration:
-  pageTitle: ZEN大学 カリキュラム・グラフ
+  pageTitle: ZEN大 カリキュラム・グラフ
   pageTitleSuffix: ""
   enableSPA: true
   enablePopovers: false
@@ -141,7 +141,7 @@ plugins:
   - source: github:quartz-community/favicon
     enabled: true
   - source: github:quartz-community/og-image
-    enabled: true
+    enabled: false
   - source: github:quartz-community/cname
     enabled: true
   - source: github:quartz-community/canvas-page
